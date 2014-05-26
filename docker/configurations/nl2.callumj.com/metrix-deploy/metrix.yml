@@ -1,0 +1,2 @@
+listen: ":8020"
+sentry: "https://somesentry-address@app.getsentry.com/3"

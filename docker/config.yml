@@ -1,0 +1,24 @@
+src: ../DockerConf
+encrypt: true
+configurations:
+  - name: nl2.callumj.com
+    except:
+      - ^radio1
+  - name: uk.callumj.com
+    only:
+      - ^radio1
+      - ^post_extraction
+      - ^pre_extraction
+ignore:
+  - ^\.git
+  - /\.git
+  - \.DS_Store
+  - ^\.bundle
+  - /\.bundle
+s3:
+  access_key: SOME_ACCESS_KEY
+  secret: "SOME_SECRET"
+  bucket: international-bucket
+  endpoint: eu-west-1
+  folder: docker
+  public: true
